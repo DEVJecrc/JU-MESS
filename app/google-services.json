@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "449145325609",
+    "firebase_url": "https://ju-mess.firebaseio.com",
+    "project_id": "ju-mess",
+    "storage_bucket": "ju-mess.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449145325609:android:c4fd7de4a6019d67",
+        "android_client_info": {
+          "package_name": "ju_mess.dexter.com.ju_mess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449145325609-qu9ob34phifh4iahhdqbpak4r20va91c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ju_mess.dexter.com.ju_mess",
+            "certificate_hash": "702763dab0ad94fc4c7108fd625803cd41058d73"
+          }
+        },
+        {
+          "client_id": "449145325609-pktfpjksuume55h7dcbv7cp9q2enl2e7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXg3OdMHJcgT17WfL7J0fkR2dmL-YNpvA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449145325609-pktfpjksuume55h7dcbv7cp9q2enl2e7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
