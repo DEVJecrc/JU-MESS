@@ -54,7 +54,7 @@ public class LogInActivity extends AppCompatActivity {
         if(firebaseAuth.getCurrentUser()!=null)
         {
             //Start Profile Activity
-            Intent intent = new Intent(LogInActivity.this,HomeActivity.class);
+            Intent intent = new Intent(LogInActivity.this,MainActivity.class);
             startActivity(intent);
         }
 
@@ -101,7 +101,7 @@ public class LogInActivity extends AppCompatActivity {
                             FirebaseUser user = firebaseAuth.getCurrentUser();
 
                             // updateUI Now Home Activity will start
-                            Intent intent = new Intent(LogInActivity.this,HomeActivity.class);
+                            Intent intent = new Intent(LogInActivity.this,MainActivity.class);
                             startActivity(intent);
                         } else {
                             // If sign in fails, display a message to the user.
