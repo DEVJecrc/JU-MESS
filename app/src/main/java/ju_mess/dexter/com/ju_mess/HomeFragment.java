@@ -13,7 +13,7 @@ import android.widget.Button;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements View.OnClickListener {
 
         Button buttonBreakfast,buttonLunch,buttonSnacks,buttonDinner;
 
@@ -45,30 +45,27 @@ public class HomeFragment extends Fragment {
     }
     @Override
     public void onClick(View v) {
+        Intent intent1 = new Intent(getContext(),Menu.class);
         if (v == buttonBreakfast)
         {
-            Intent intent1 = new Intent(HomeFragment.this,MainActivity.class);
             intent1.putExtra("Meal Time","Breakfast");
             startActivity(intent1);
 
         }
         if (v == buttonLunch)
         {
-            Intent intent2 = new Intent(HomeFragment.this,MainActivity.class);
-            intent2.putExtra("Meal Time","Lunch");
-            startActivity(intent2);
+            intent1.putExtra("Meal Time","Lunch");
+            startActivity(intent1);
         }
         if (v == buttonSnacks)
         {
-            Intent intent3 = new Intent(HomeFragment.this,MainActivity.class);
-            intent3.putExtra("Meal Time","Snacks");
-            startActivity(intent3);
+            intent1.putExtra(   "Meal Time","Snacks");
+            startActivity(intent1);
         }
         if (v == buttonDinner)
         {
-            Intent intent4 = new Intent(HomeFragment.this,MainActivity.class);
-            intent4.putExtra("Meal Time","Dinner");
-            startActivity(intent4);
+            intent1.putExtra("Meal Time","Dinner");
+            startActivity(intent1);
         }
 
     }

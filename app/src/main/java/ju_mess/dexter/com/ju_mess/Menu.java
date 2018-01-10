@@ -35,11 +35,7 @@ public class Menu extends AppCompatActivity {
         String MealTime = getIntent().getExtras().getString("Meal Time");
 
         listView = (ListView) findViewById(R.id.listview);
-
-
         firebaseAuth = FirebaseAuth.getInstance();
-
-
 
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line,list);
         listView.setAdapter(adapter);

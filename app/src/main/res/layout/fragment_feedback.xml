@@ -4,20 +4,68 @@
     android:layout_height="match_parent"
     tools:context="ju_mess.dexter.com.ju_mess.FeedbackFragment">
 
+
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="match_parent">
 
-        <Button
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hey I am Feedback"
-            android:layout_margin="100dp"
+            android:text="Choose Your Meal Time"
+            android:textAlignment="center"
+            android:layout_margin="16dp"
+            android:textSize="30dp"
+            android:layout_marginBottom="30dp"
             />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Buttonbreakfast"
+                android:background="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                />
+            <Button
+                android:id="@+id/ButtonLunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@mipmap/ic_launcher"
+                android:layout_toRightOf="@+id/Buttonbreakfast"
+                />
+            <Button
+                android:id="@+id/ButtonSnacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@mipmap/ic_launcher"
+                android:layout_below="@+id/Buttonbreakfast"
+                />
+            <Button
+                android:id="@+id/ButtonDinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@mipmap/ic_launcher"
+                android:layout_toRightOf="@+id/ButtonSnacks"
+                android:layout_below="@+id/ButtonLunch"
+
+                />
+
+
+
+        </RelativeLayout>
+
 
     </LinearLayout>
+
 
 
 </FrameLayout>

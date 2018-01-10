@@ -20,7 +20,9 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" />
-        <activity android:name=".Menu"></activity>
+        <activity android:name=".Menu" />
+        <activity android:name=".MenuFeedback" />
+        <activity android:name=".SubmitFeedback"></activity>
     </application>
 
 </manifest>
