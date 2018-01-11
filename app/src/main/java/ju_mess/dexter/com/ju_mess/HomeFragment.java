@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 
 /**
@@ -15,7 +16,7 @@ import android.widget.Button;
  */
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
-        Button buttonBreakfast,buttonLunch,buttonSnacks,buttonDinner;
+        ImageView buttonBreakfast,buttonLunch,buttonSnacks,buttonDinner;
 
 
     public HomeFragment() {
@@ -31,10 +32,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         // TODO This is our OnCreate
 
-        buttonBreakfast = (Button)view.findViewById(R.id.Buttonbreakfast);
-        buttonLunch = (Button)view.findViewById(R.id.ButtonLunch);
-        buttonSnacks = (Button)view.findViewById(R.id.ButtonSnacks);
-        buttonDinner = (Button)view.findViewById(R.id.ButtonDinner);
+        buttonBreakfast = (ImageView)view.findViewById(R.id.Buttonbreakfast);
+        buttonLunch = (ImageView)view.findViewById(R.id.ButtonLunch);
+        buttonSnacks = (ImageView)view.findViewById(R.id.ButtonSnacks);
+        buttonDinner = (ImageView)view.findViewById(R.id.ButtonDinner);
 
         buttonBreakfast.setOnClickListener(this);
         buttonLunch.setOnClickListener(this);

@@ -69,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        setTitle("Updates");
-        UpdatesFragment updatesFragment = new UpdatesFragment();
-        android.support.v4.app.FragmentTransaction fragmentTransactionUpdates = getSupportFragmentManager().beginTransaction();
-        fragmentTransactionUpdates.replace(R.id.content,updatesFragment,"Updates Fragment");
-        fragmentTransactionUpdates.commit();
+        setTitle("Home");
+        HomeFragment homeFragment = new HomeFragment();
+        android.support.v4.app.FragmentTransaction fragmentTransactionHome = getSupportFragmentManager().beginTransaction();
+        fragmentTransactionHome.replace(R.id.content,homeFragment,"Home Fragment");
+        fragmentTransactionHome.commit();
 
     }
 

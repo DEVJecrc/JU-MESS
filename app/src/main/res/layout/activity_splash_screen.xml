@@ -3,18 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#e2f5dd"
+    android:background="#4CAF50"
     android:layout_height="match_parent"
     tools:context="ju_mess.dexter.com.ju_mess.SplashScreen">
 
     <ImageView
         android:id="@+id/SplashLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="107dp"
+        android:layout_height="127dp"
         android:layout_centerInParent="true"
-        android:background="@mipmap/ic_launcher_round"
-
-        android:text="Akshay Bengani" />
+        android:background="@drawable/logowhite"
+         />
 
 
 </RelativeLayout>

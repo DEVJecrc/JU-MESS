@@ -1,5 +1,6 @@
 package ju_mess.dexter.com.ju_mess;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
@@ -23,8 +25,7 @@ public class Menu extends AppCompatActivity {
     DatabaseReference databaseReference;
     ArrayList<String> list = new ArrayList<>();
     ArrayAdapter<String> adapter;
-
-    private FirebaseAuth firebaseAuth;
+     private FirebaseAuth firebaseAuth;
 
 
     @Override
@@ -33,6 +34,9 @@ public class Menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         String MealTime = getIntent().getExtras().getString("Meal Time");
+
+        setTitle(MealTime);
+
 
         listView = (ListView) findViewById(R.id.listview);
         firebaseAuth = FirebaseAuth.getInstance();
@@ -57,7 +61,7 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
-                String value = dataSnapshot.getValue(String.class);
+                String value = String.valueOf(dataSnapshot.getValue());
                 list.add(value);
                 adapter.notifyDataSetChanged();
 

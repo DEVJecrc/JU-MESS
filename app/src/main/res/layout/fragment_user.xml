@@ -8,13 +8,34 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
+        android:layout_margin="16dp"
         android:layout_height="match_parent">
-
-        <Button
+        <TextView
+            android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hey I am User"
-            android:layout_margin="100dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="User Id :"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:text="Name FamilyName"/>
+
+        <Button
+            android:id="@+id/SignOut"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LogOut"
+
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
             />
 
     </LinearLayout>
