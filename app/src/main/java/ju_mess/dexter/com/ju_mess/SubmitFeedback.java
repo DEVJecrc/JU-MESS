@@ -70,6 +70,8 @@ public class SubmitFeedback extends AppCompatActivity {
 
         int i = Integer.parseInt(usr_rate);
 
+        // Todo here is the intent value get method
+
         if (i>0 && i<11)
         {
             Intent Q = getIntent();

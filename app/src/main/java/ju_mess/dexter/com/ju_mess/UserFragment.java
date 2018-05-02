@@ -35,13 +35,15 @@ public class UserFragment extends Fragment {
 
         // TODO This is our OnCreate
         firebaseAuth = FirebaseAuth.getInstance();
-        FirebaseUser user = firebaseAuth.getCurrentUser();
+        final FirebaseUser user = firebaseAuth.getCurrentUser();
 
         SignOut = (Button)view.findViewById(R.id.SignOut);
 
         SignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                firebaseAuth.signOut();
                 Toast.makeText(getContext(),"LogOut Successfull",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getContext(),LogInActivity.class);
                 startActivity(intent);

@@ -20,14 +20,19 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_updates:
 
+                    //To set the title of the activity
                     setTitle("Updates");
+                    // Creates a UpdateFragment class Object
                     UpdatesFragment updatesFragment = new UpdatesFragment();
+                    // Creating FragmentTransactionUpdates object using fragment manager and started transaction by the beigiin Transaction
                     android.support.v4.app.FragmentTransaction fragmentTransactionUpdates = getSupportFragmentManager().beginTransaction();
-                    fragmentTransactionUpdates.replace(R.id.content,updatesFragment,"Updates Fragment");
+                    // The desired Fragment is put into the particular frame layout
+                    fragmentTransactionUpdates.replace(R.id.content,updatesFragment
+                                ,"Updates Fragment");
                     fragmentTransactionUpdates.commit();
-
                     return true;
-                case R.id.navigation_home:
+
+                    case R.id.navigation_home:
 
                     setTitle("Home");
                     HomeFragment homeFragment = new HomeFragment();
@@ -36,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
                     fragmentTransactionHome.commit();
 
                     return true;
-                case R.id.navigation_feedback:
+
+                    case R.id.navigation_feedback:
 
                     setTitle("FeedBack");
                     FeedbackFragment feedbackFragment = new FeedbackFragment();

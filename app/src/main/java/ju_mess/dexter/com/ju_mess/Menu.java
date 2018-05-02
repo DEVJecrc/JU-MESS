@@ -1,5 +1,6 @@
 package ju_mess.dexter.com.ju_mess;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,6 +28,8 @@ public class Menu extends AppCompatActivity {
     ArrayAdapter<String> adapter;
      private FirebaseAuth firebaseAuth;
 
+    // Here we declared a ProgressDialog variable
+    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,12 @@ public class Menu extends AppCompatActivity {
 
         setTitle(MealTime);
 
+        //Here we initialised the progress Dialog
+        progressDialog=new ProgressDialog(this);
+        // Here we set the logging message in the progress dialog
+        progressDialog.setMessage("Loading Data");
+        // Here we show the progress Dialog message
+        progressDialog.show();
 
         listView = (ListView) findViewById(R.id.listview);
         firebaseAuth = FirebaseAuth.getInstance();
